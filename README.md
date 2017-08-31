@@ -29,3 +29,5 @@ MqttClient has the support to add custom Callback for undelivered messages for u
 ```
 
 `SharedSubCallbackRouter` deals with the limitations of paho's `MqttTopic.isMatched(topicFilter, topic)` to match shared subscription topic filter's patterns.
+
+This project descrines `SharedSubCallbackRouter` source for reference.
