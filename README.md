@@ -24,6 +24,7 @@ MqttClient has the support to add custom Callback for undelivered messages for u
         }
     });
     
+    //Important to have `client.setCallback` before `client.subscribe`
     client.setCallback(new SharedSubCallbackRouter(listeners));
     client.subscribe(sharedTopic);
 ```
